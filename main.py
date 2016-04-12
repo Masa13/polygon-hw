@@ -9,6 +9,8 @@ color = [ 0, 255, 0 ]
 edges = []
 transform = new_matrix()
 
+f = open('script_3d')
+
 if len(sys.argv) == 2:
     f = open(sys.argv[1])
 
