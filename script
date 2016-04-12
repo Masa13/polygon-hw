@@ -6,6 +6,8 @@ torus
 300 0 25 80
 torus
 500 0 25 80
+torus
+700 0 25 80
 ident
 zrotate
 45
