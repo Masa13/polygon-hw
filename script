@@ -1,9 +1,11 @@
 sphere
-10 300 60
+300 300 60
 torus
 100 0 25 80
 torus
 300 0 25 80
+torus
+500 0 25 80
 ident
 zrotate
 45
