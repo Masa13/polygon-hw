@@ -63,6 +63,8 @@ target/
 
 #Python junks
 *.pyc
+
+#Emacs junks
 *~
 
 
