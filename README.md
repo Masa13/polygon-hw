@@ -1,1 +1,1 @@
-# polygon-hw Computer Grap
+# polygon-hw Computer Graph
