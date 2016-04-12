@@ -83,3 +83,6 @@ def parse_file( f, points, transform, screen, color ):
         elif cmd[0] != '#':
             print 'Invalid command: ' + cmd
         c+= 1
+Status API Training Shop Blog About
+
+
