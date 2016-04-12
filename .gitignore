@@ -61,7 +61,8 @@ target/
 #Ipython Notebook
 .ipynb_checkpoints
 
-#other junks etc
+#Python junks
 *.pyc
 *~
+
 
