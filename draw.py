@@ -47,30 +47,21 @@ def add_box( points, x, y, z, width, height, depth ):
 
 def add_sphere( points, cx, cy, cz, r, step ):
     
-    num_steps = MAX_STEPS / step
-    temp = []
+    n = MAX_STEPS / step
+    m = []
 
-    generate_sphere( temp, cx, cy, cz, r, step )
+    generate_sphere( m, cx, cy, cz, r, step )
 
     lat = -1
-    lat_stop = num_steps
-    longt_stop = num_steps
+    lat_stop = n
+    longt_stop = n
     
     while lat < lat_stop-1:
         longt = -1
         while longt < longt_stop-1:
-            
-            index = lat * num_steps + longt
-
-            add_polygon( points, 
-                         temp[index][0], temp[index][1], temp[index][2],
-                         temp[index+1][0], temp[index+1][1], temp[index+1][2],
-                         temp[index+num_steps][0], temp[index+num_steps][1], temp[index+num_steps][2] )
-            add_polygon( points, 
-                         temp[index+num_steps][0], temp[index+num_steps][1], temp[index+num_steps][2],
-                         temp[index+1][0], temp[index+1][1], temp[index+1][2],
-                         temp[index+num_steps+1][0], temp[index+num_steps+1][1], temp[index+num_steps+1][2] )
-
+            i = lat * n + longt
+            add_polygon( points, m[i][0], m[i][1], m[i][2], m[i+1][0], m[i+1][1], m[i+1][2], m[i+n][0], m[i+n][1], m[i+n][2] )
+            add_polygon( points,  m[i+n][0], m[i+n][1], m[i+n][2], m[i+1][0], m[index+1][1], m[i+1][2], m[i+n+1][0], m[i+n+1][1], m[i+n+1][2] )
             longt+= 1
         lat+= 1
 
