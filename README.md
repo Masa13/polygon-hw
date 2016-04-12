@@ -1,1 +1,1 @@
-# polygon-hw Computer Graphi
+# polygon-hw Computer Graphic
