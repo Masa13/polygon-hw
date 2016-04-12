@@ -102,7 +102,7 @@ def add_torus( points, cx, cy, cz, r0, r1, step ):
     while lat < lat_stop-1:
         longt = -1
         while longt < longt_stop-1:
-            i = lat * num_steps + longt
+            i = lat * n + longt
             add_polygon( points, m[i][0], m[i][1], m[i][2], m[i+1][0], m[i+1][1], m[i+1][2], m[i+n][0], m[i+n][1], m[i+n][2] )
             add_polygon( points,m[ii+n][0], m[i+n][1], m[i+n][2],m[i+1][0], m[i+1][1], m[i+1][2],m[i+n+1][0], m[i+n+1][1], m[i+n+1][2] ) 
             longt+= 1
