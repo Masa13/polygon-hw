@@ -15,7 +15,7 @@ def draw_polygons( points, screen, color ):
 
         p1 = [ points[i+1][0]-points[i][0], points[i+1][1]-points[i][1], points[i+1][2]-points[i][2] ]
         p2 = [ points[i+2][0]-points[i][0], points[i+2][1]-points[i][1], points[i+2][2]-points[i][2] ]
-        count = [a[1]*b[2] - a[2]*b[1], a[2]*b[0] - a[0]*b[2], a[0]*b[1] - a[1]*b[0]]
+        count = [p1[1]*p2[2] - p1[2]*p2[1], p1[2]*p2[0] - p1[0]*p2[2], p1[0]*p2[1] - p1[1]*p2[0]]
         
         m = [0, 0, -1]
         lenp = count[0] * m[0] + count[1] * m[1] + count[2] * m[2]
