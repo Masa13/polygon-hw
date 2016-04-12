@@ -1,0 +1,14 @@
+sphere
+10 300 60
+torus
+100 0 25 80
+torus
+300 0 25 80
+ident
+zrotate
+45
+yrotate
+45
+apply
+display
+quit
