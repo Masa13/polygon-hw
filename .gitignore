@@ -63,4 +63,5 @@ target/
 
 #other junks etc
 *.pyc
+*~
 
